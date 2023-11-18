@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="KB" Class="DataClasses3DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-DOP3PHE3;Initial Catalog=KB;User ID=sa" SettingsObjectName="AccesoDatos.My.MySettings" SettingsPropertyName="KBConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.Trae_cliente" Method="Trae_cliente">
+    <ElementType Name="Trae_clienteResult">
+      <Column Name="id_Cliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Apellido_P" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Apellido_M" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="RFC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Correo" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Trae_detalleStok" Method="Trae_detalleStok">
+    <ElementType Name="Trae_detalleStokResult">
+      <Column Name="Id_DS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Prod" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Salidas" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Entradas" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Total" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Trae_detalleVentas" Method="Trae_detalleVentas">
+    <ElementType Name="Trae_detalleVentasResult">
+      <Column Name="Factura" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Prod" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Trae_empleados" Method="Trae_empleados">
+    <ElementType Name="Trae_empleadosResult">
+      <Column Name="Id_E" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Us" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_P" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Apellido_P" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Apellido_M" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Correo" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Trae_perfiles" Method="Trae_perfiles">
+    <ElementType Name="Trae_perfilesResult">
+      <Column Name="Id_P" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Puesto" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Trae_producto" Method="Trae_producto">
+    <ElementType Name="Trae_productoResult">
+      <Column Name="Id_Prod" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Prov" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Precio_C" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Precio_V" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Trae_provedores" Method="Trae_provedores">
+    <ElementType Name="Trae_provedoresResult">
+      <Column Name="Id_Prov" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Correo" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Numero" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Trae_stok" Method="Trae_stok">
+    <ElementType Name="Trae_stokResult">
+      <Column Name="Id_Stock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Prod" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha_Ingreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Trae_usuarios" Method="Trae_usuarios">
+    <ElementType Name="Trae_usuariosResult">
+      <Column Name="Id_Us" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[_User]" Member="_User" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Password]" Member="_Password" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Trae_ventas" Method="Trae_ventas">
+    <ElementType Name="Trae_ventasResult">
+      <Column Name="Clave" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Factura" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Empleado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Cliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Sub_t" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IVA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Total" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>
