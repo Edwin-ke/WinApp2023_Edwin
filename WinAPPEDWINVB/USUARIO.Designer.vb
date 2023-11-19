@@ -225,7 +225,7 @@ Partial Class USUARIO
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImage = Global.WinAPPEDWINVB.My.Resources.Resources.Fr
         Me.ClientSize = New System.Drawing.Size(1206, 802)
         Me.ControlBox = False
         Me.Controls.Add(Me.GroupBox2)

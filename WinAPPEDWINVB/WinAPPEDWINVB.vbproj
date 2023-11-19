@@ -76,6 +76,18 @@
     <Compile Include="CLIENTE.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DETALLE_VENTAS.Designer.vb">
+      <DependentUpon>DETALLE_VENTAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DETALLE_VENTAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLEADOS.Designer.vb">
+      <DependentUpon>EMPLEADOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLEADOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_Detalle_Stock.Designer.vb">
       <DependentUpon>Form_Detalle_Stock.vb</DependentUpon>
     </Compile>
@@ -106,6 +118,12 @@
     <Compile Include="Form_Ventas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PERFILES.Designer.vb">
+      <DependentUpon>PERFILES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PERFILES.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="USUARIO.Designer.vb">
       <DependentUpon>USUARIO.vb</DependentUpon>
     </Compile>
@@ -133,6 +151,12 @@
     <EmbeddedResource Include="CLIENTE.resx">
       <DependentUpon>CLIENTE.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DETALLE_VENTAS.resx">
+      <DependentUpon>DETALLE_VENTAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLEADOS.resx">
+      <DependentUpon>EMPLEADOS.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Detalle_Stock.resx">
       <DependentUpon>Form_Detalle_Stock.vb</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +177,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERFILES.resx">
+      <DependentUpon>PERFILES.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="USUARIO.resx">
       <DependentUpon>USUARIO.vb</DependentUpon>
@@ -178,6 +205,9 @@
       <Project>{910abdc6-7339-496e-b5d4-9bd3124c1ac7}</Project>
       <Name>Negocios</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fr.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
