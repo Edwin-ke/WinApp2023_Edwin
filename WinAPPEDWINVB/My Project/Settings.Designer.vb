@@ -53,6 +53,28 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=SIMMONS;Initial Catalog=B2;Integrated Security=True;Connect Timeout=3"& _ 
+            "0;Encrypt=False;TrustServerCertificate=False")>  _
+        Public ReadOnly Property B2ConnectionString() As String
+            Get
+                Return CType(Me("B2ConnectionString"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=SIMMONS;Initial Catalog=KB;Integrated Security=True;Connect Timeout=3"& _ 
+            "0;Encrypt=False;TrustServerCertificate=False")>  _
+        Public ReadOnly Property KBConnectionString() As String
+            Get
+                Return CType(Me("KBConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

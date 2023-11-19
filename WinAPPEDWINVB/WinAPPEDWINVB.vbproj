@@ -70,6 +70,37 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.vb" />
+    <Compile Include="Form_Detalle_Stock.Designer.vb">
+      <DependentUpon>Form_Detalle_Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Detalle_Stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Productos.Designer.vb">
+      <DependentUpon>Form_Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Proveedores.Designer.vb">
+      <DependentUpon>Form_Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Stock.Designer.vb">
+      <DependentUpon>Form_Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Ventas.Designer.vb">
+      <DependentUpon>Form_Ventas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="us.vb" />
     <Compile Include="USUARIO.Designer.vb">
       <DependentUpon>USUARIO.vb</DependentUpon>
@@ -95,6 +126,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form_Detalle_Stock.resx">
+      <DependentUpon>Form_Detalle_Stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Productos.resx">
+      <DependentUpon>Form_Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Proveedores.resx">
+      <DependentUpon>Form_Proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Stock.resx">
+      <DependentUpon>Form_Stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Ventas.resx">
+      <DependentUpon>Form_Ventas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
