@@ -70,7 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.vb" />
+    <Compile Include="CLIENTE.Designer.vb">
+      <DependentUpon>CLIENTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENTE.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_Detalle_Stock.Designer.vb">
       <DependentUpon>Form_Detalle_Stock.vb</DependentUpon>
     </Compile>
@@ -101,7 +106,6 @@
     <Compile Include="Form_Ventas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="us.vb" />
     <Compile Include="USUARIO.Designer.vb">
       <DependentUpon>USUARIO.vb</DependentUpon>
     </Compile>
@@ -126,6 +130,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CLIENTE.resx">
+      <DependentUpon>CLIENTE.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Detalle_Stock.resx">
       <DependentUpon>Form_Detalle_Stock.vb</DependentUpon>
     </EmbeddedResource>
