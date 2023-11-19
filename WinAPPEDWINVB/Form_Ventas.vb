@@ -3,7 +3,7 @@
 
     End Sub
 
-    Private Sub TextBox11_TextChanged(sender As Object, e As EventArgs) Handles TextBox11.TextChanged
+    Private Sub TextBox11_TextChanged(sender As Object, e As EventArgs) 
 
     End Sub
 End Class
