@@ -962,4 +962,7 @@
         ss11TG1e58jn57+i//8c/f9/qP99TPM2mtvKy/SEeJ4o+v+lZ/ScADqsMQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="BackgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

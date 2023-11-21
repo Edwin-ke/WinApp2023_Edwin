@@ -26,6 +26,7 @@ Partial Class DETALLE_VENTAS
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -36,7 +37,6 @@ Partial Class DETALLE_VENTAS
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -52,7 +52,7 @@ Partial Class DETALLE_VENTAS
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(1170, 88)
         Me.Label1.TabIndex = 9
-        Me.Label1.Text = "DETALLE_VENTA"
+        Me.Label1.Text = "Detalles de ventas "
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label2
@@ -85,6 +85,14 @@ Partial Class DETALLE_VENTAS
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Información de detalle_venta"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(165, 93)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(206, 26)
+        Me.TextBox2.TabIndex = 9
         '
         'Label6
         '
@@ -197,14 +205,6 @@ Partial Class DETALLE_VENTAS
         Me.Button1.TabIndex = 4
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(165, 93)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(206, 26)
-        Me.TextBox2.TabIndex = 9
-        '
         'DETALLE_VENTAS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -217,7 +217,7 @@ Partial Class DETALLE_VENTAS
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "DETALLE_VENTAS"
-        Me.Text = "DETALLE_VENTAS"
+        Me.Text = "t"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

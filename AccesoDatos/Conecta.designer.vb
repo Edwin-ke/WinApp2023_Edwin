@@ -117,6 +117,18 @@ Partial Public Class DataClasses3DataContext
 		Dim result As IExecuteResult = Me.ExecuteMethodCall(Me, CType(MethodInfo.GetCurrentMethod,MethodInfo))
 		Return CType(result.ReturnValue,ISingleResult(Of Trae_ventasResult))
 	End Function
+	
+	<Global.System.Data.Linq.Mapping.FunctionAttribute(Name:="dbo.Elimina_producto")>  _
+	Public Function Elimina_producto(<Global.System.Data.Linq.Mapping.ParameterAttribute(DbType:="Int")> ByVal id As System.Nullable(Of Integer), <Global.System.Data.Linq.Mapping.ParameterAttribute(DbType:="NVarChar(MAX)")> ByVal nombre As String) As Integer
+		Dim result As IExecuteResult = Me.ExecuteMethodCall(Me, CType(MethodInfo.GetCurrentMethod,MethodInfo), id, nombre)
+		Return CType(result.ReturnValue,Integer)
+	End Function
+	
+	<Global.System.Data.Linq.Mapping.FunctionAttribute(Name:="dbo.Inserta_actualizaProducto")>  _
+	Public Function Inserta_actualizaProducto(<Global.System.Data.Linq.Mapping.ParameterAttribute(DbType:="Int")> ByVal id_Prod As System.Nullable(Of Integer), <Global.System.Data.Linq.Mapping.ParameterAttribute(Name:="Id_prov", DbType:="Int")> ByVal id_prov As System.Nullable(Of Integer), <Global.System.Data.Linq.Mapping.ParameterAttribute(Name:="Nombre", DbType:="NVarChar(MAX)")> ByVal nombre As String, <Global.System.Data.Linq.Mapping.ParameterAttribute(Name:="Precio_c", DbType:="Decimal(18,2)")> ByVal precio_c As System.Nullable(Of Decimal), <Global.System.Data.Linq.Mapping.ParameterAttribute(Name:="Precio_V", DbType:="Decimal(18,2)")> ByVal precio_V As System.Nullable(Of Decimal), <Global.System.Data.Linq.Mapping.ParameterAttribute(Name:="Imagen", DbType:="Image")> ByVal imagen As System.Data.Linq.Binary, <Global.System.Data.Linq.Mapping.ParameterAttribute(Name:="Fecha", DbType:="DateTime")> ByVal fecha As System.Nullable(Of Date)) As Integer
+		Dim result As IExecuteResult = Me.ExecuteMethodCall(Me, CType(MethodInfo.GetCurrentMethod,MethodInfo), id_Prod, id_prov, nombre, precio_c, precio_V, imagen, fecha)
+		Return CType(result.ReturnValue,Integer)
+	End Function
 End Class
 
 Partial Public Class Trae_clienteResult
