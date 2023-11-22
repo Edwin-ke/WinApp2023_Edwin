@@ -28,7 +28,7 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        DataGridView1.DataSource = com
+        DataGridView1.DataSource = com.Traer_Productos()
 
 
     End Sub

@@ -32,11 +32,17 @@ Public Class Comunicacion
 
     End Function
 
+    Public Sub Eliminar_productos(ByVal id As Integer, ByVal nombre As String)
+        db.Elimina_producto(id, nombre)
+        db.SubmitChanges()
+    End Sub
+
+    Public Sub InsertayModifica_Productos(ByVal id_prod As Integer, ByVal id_prov As Integer, ByVal nombre)
 
 
     'Public Fuction Trae_Proveedores() As List(Of Entidades.Producto_entitie)
     ' D
-
+    'fk u ng
 
 
 
