@@ -25,7 +25,6 @@ Public Class Form_Productos
         dgvProductos.Columns("_Nombre").DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
         dgvProductos.Columns("_Nombre").Width = 180
         dgvProductos.Columns("_Nombre").ReadOnly = True
-
     End Sub
 
 
