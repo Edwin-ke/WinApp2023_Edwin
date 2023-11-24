@@ -38,12 +38,8 @@ Public Class Comunicacion
     End Sub
 
     Public Sub InsertayModifica_Productos(ByVal id_prod As Integer, ByVal id_prov As Integer, ByVal nombre)
-
-
-    'Public Fuction Trae_Proveedores() As List(Of Entidades.Producto_entitie)
-    ' D
-    'fk u ng
-
-
+        db.Inserta_actualizaProducto(id_prod)
+        db.SubmitChanges()
+    End Sub
 
 End Class
