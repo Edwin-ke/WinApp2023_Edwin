@@ -24,14 +24,14 @@ Partial Class Form_Productos
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Productos))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.btnBorrar = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgvProductos = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cbx_Provedor = New System.Windows.Forms.ComboBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -42,10 +42,10 @@ Partial Class Form_Productos
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txt_Producto = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -53,9 +53,9 @@ Partial Class Form_Productos
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.GroupBox2.Controls.Add(Me.Button3)
-        Me.GroupBox2.Controls.Add(Me.Button2)
-        Me.GroupBox2.Controls.Add(Me.Button1)
+        Me.GroupBox2.Controls.Add(Me.btnBuscar)
+        Me.GroupBox2.Controls.Add(Me.btnBorrar)
+        Me.GroupBox2.Controls.Add(Me.btnGuardar)
         Me.GroupBox2.Location = New System.Drawing.Point(939, 402)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.GroupBox2.Name = "GroupBox2"
@@ -65,42 +65,42 @@ Partial Class Form_Productos
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Opciones"
         '
-        'Button3
+        'btnBuscar
         '
-        Me.Button3.BackColor = System.Drawing.SystemColors.Control
-        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.Location = New System.Drawing.Point(78, 32)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(60, 62)
-        Me.Button3.TabIndex = 6
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnBuscar.BackColor = System.Drawing.SystemColors.Control
+        Me.btnBuscar.BackgroundImage = CType(resources.GetObject("btnBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnBuscar.Location = New System.Drawing.Point(78, 32)
+        Me.btnBuscar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(60, 62)
+        Me.btnBuscar.TabIndex = 6
+        Me.btnBuscar.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnBorrar
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.Control
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Location = New System.Drawing.Point(147, 32)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(60, 62)
-        Me.Button2.TabIndex = 5
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnBorrar.BackColor = System.Drawing.SystemColors.Control
+        Me.btnBorrar.BackgroundImage = CType(resources.GetObject("btnBorrar.BackgroundImage"), System.Drawing.Image)
+        Me.btnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnBorrar.Location = New System.Drawing.Point(147, 32)
+        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnBorrar.Name = "btnBorrar"
+        Me.btnBorrar.Size = New System.Drawing.Size(60, 62)
+        Me.btnBorrar.TabIndex = 5
+        Me.btnBorrar.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btnGuardar
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.Control
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.BottomRight
-        Me.Button1.Location = New System.Drawing.Point(9, 32)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(60, 62)
-        Me.Button1.TabIndex = 4
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnGuardar.BackColor = System.Drawing.SystemColors.Control
+        Me.btnGuardar.BackgroundImage = CType(resources.GetObject("btnGuardar.BackgroundImage"), System.Drawing.Image)
+        Me.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.btnGuardar.Location = New System.Drawing.Point(9, 32)
+        Me.btnGuardar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(60, 62)
+        Me.btnGuardar.TabIndex = 4
+        Me.btnGuardar.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -115,15 +115,15 @@ Partial Class Form_Productos
         Me.Label2.Text = "PRODUCTOS"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'DataGridView1
+        'dgvProductos
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(18, 574)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.Size = New System.Drawing.Size(1170, 209)
-        Me.DataGridView1.TabIndex = 9
+        Me.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvProductos.Location = New System.Drawing.Point(18, 574)
+        Me.dgvProductos.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.dgvProductos.Name = "dgvProductos"
+        Me.dgvProductos.RowHeadersWidth = 62
+        Me.dgvProductos.Size = New System.Drawing.Size(1170, 209)
+        Me.dgvProductos.TabIndex = 9
         '
         'Label1
         '
@@ -141,7 +141,7 @@ Partial Class Form_Productos
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.cbx_Provedor)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -152,7 +152,7 @@ Partial Class Form_Productos
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.txt_Producto)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Location = New System.Drawing.Point(60, 123)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
@@ -163,13 +163,13 @@ Partial Class Form_Productos
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos del producto"
         '
-        'ComboBox1
+        'cbx_Provedor
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(165, 89)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(206, 28)
-        Me.ComboBox1.TabIndex = 13
+        Me.cbx_Provedor.FormattingEnabled = True
+        Me.cbx_Provedor.Location = New System.Drawing.Point(165, 89)
+        Me.cbx_Provedor.Name = "cbx_Provedor"
+        Me.cbx_Provedor.Size = New System.Drawing.Size(206, 28)
+        Me.cbx_Provedor.TabIndex = 13
         '
         'DateTimePicker1
         '
@@ -268,13 +268,13 @@ Partial Class Form_Productos
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "ID Proveedor:"
         '
-        'TextBox1
+        'txt_Producto
         '
-        Me.TextBox1.Location = New System.Drawing.Point(165, 54)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(206, 26)
-        Me.TextBox1.TabIndex = 1
+        Me.txt_Producto.Location = New System.Drawing.Point(165, 54)
+        Me.txt_Producto.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txt_Producto.Name = "txt_Producto"
+        Me.txt_Producto.Size = New System.Drawing.Size(206, 26)
+        Me.txt_Producto.TabIndex = 1
         '
         'Label3
         '
@@ -297,13 +297,13 @@ Partial Class Form_Productos
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgvProductos)
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Form_Productos"
         Me.Text = "Productos"
         Me.GroupBox2.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -312,11 +312,11 @@ Partial Class Form_Productos
     End Sub
 
     Friend WithEvents GroupBox2 As Windows.Forms.GroupBox
-    Friend WithEvents Button3 As Windows.Forms.Button
-    Friend WithEvents Button2 As Windows.Forms.Button
-    Friend WithEvents Button1 As Windows.Forms.Button
+    Friend WithEvents btnBuscar As Windows.Forms.Button
+    Friend WithEvents btnBorrar As Windows.Forms.Button
+    Friend WithEvents btnGuardar As Windows.Forms.Button
     Friend WithEvents Label2 As Windows.Forms.Label
-    Friend WithEvents DataGridView1 As Windows.Forms.DataGridView
+    Friend WithEvents dgvProductos As Windows.Forms.DataGridView
     Friend WithEvents Label1 As Windows.Forms.Label
     Friend WithEvents GroupBox1 As Windows.Forms.GroupBox
     Friend WithEvents Label6 As Windows.Forms.Label
@@ -324,12 +324,12 @@ Partial Class Form_Productos
     Friend WithEvents TextBox3 As Windows.Forms.TextBox
     Friend WithEvents Label5 As Windows.Forms.Label
     Friend WithEvents Label4 As Windows.Forms.Label
-    Friend WithEvents TextBox1 As Windows.Forms.TextBox
+    Friend WithEvents txt_Producto As Windows.Forms.TextBox
     Friend WithEvents Label3 As Windows.Forms.Label
     Friend WithEvents TextBox6 As Windows.Forms.TextBox
     Friend WithEvents TextBox5 As Windows.Forms.TextBox
     Friend WithEvents Label8 As Windows.Forms.Label
     Friend WithEvents Label7 As Windows.Forms.Label
-    Friend WithEvents ComboBox1 As Windows.Forms.ComboBox
+    Friend WithEvents cbx_Provedor As Windows.Forms.ComboBox
     Friend WithEvents DateTimePicker1 As Windows.Forms.DateTimePicker
 End Class
