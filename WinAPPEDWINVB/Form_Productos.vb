@@ -1,4 +1,6 @@
-﻿Public Class Form_Productos
+﻿Imports Negocios
+Imports Entidades
+Public Class Form_Productos
 
     Dim com As New Negocios.Comunicacion
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
