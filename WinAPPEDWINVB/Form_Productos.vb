@@ -5,18 +5,17 @@ Imports System.Windows.Forms
 Public Class Form_Productos
 
     Dim com As New Negocios.Comunicacion
-
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
-    End Sub
     Public Sub Mostrar()
-        cbx_Provedor.Visible = False
-        txt_Producto.Visible = True
+        cbx_Provedor.Visible = True
+        cbx_Provedor.Visible = True
         btnBuscar.PerformClick()
         cbx_Provedor.DataSource = com.TraeProveedores()
         cbx_Provedor.DisplayMember = "_Nombre"
     End Sub
-
+    Public Sub NoMostrar()
+        cbx_Provedor.Visible = False
+        txt_Producto.Visible = True
+    End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
         dgvProductos.DataSource = com.Traer_Productos()
 
@@ -27,5 +26,11 @@ Public Class Form_Productos
         dgvProductos.Columns("_Nombre").ReadOnly = True
     End Sub
 
+    Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
+        Close()
+    End Sub
 
+    Private Sub Form_Productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Mostrar()
+    End Sub
 End Class
