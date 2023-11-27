@@ -25,7 +25,7 @@ Public Class Comunicacion
         With
                 {
                 ._Nombre = P.Nombre,
-                    ._PrecioC = Convert.ToDouble(P.Precio_C)}
+                ._PrecioC = Convert.ToDouble(P.Precio_C)}
         Return q.ToList
 
 
@@ -37,8 +37,8 @@ Public Class Comunicacion
         db.SubmitChanges()
     End Sub
 
-    Public Sub InsertayModifica_Productos(ByVal id_prod As Integer, ByVal id_prov As Integer, ByVal nombre As String, ByVal precio_c As Double, ByVal precio_v As Double, ByVal fecha As DateTime, ByVal imagen As Byte())
-        db.Inserta_actualizaProducto(id_prod, id_prov)
+    Public Sub InsertayModifica_Productos(ByVal id_prod As Integer, ByVal id_prov As Integer, ByVal nombre As String, ByVal precio_c As Double, ByVal precio_v As Double, ByVal Fecha As DateTime, ByVal Imagen As Byte())
+        db.Inserta_actualizaProducto(id_prod, id_prov, Convert.ToString(nombre), Convert.ToDecimal(precio_c), Convert.ToDecimal(precio_v), Imagen, Convert.ToDateTime(Fecha))
         db.SubmitChanges()
     End Sub
 

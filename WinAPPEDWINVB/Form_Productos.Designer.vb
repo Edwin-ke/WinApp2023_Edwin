@@ -35,15 +35,16 @@ Partial Class Form_Productos
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txt_pc = New System.Windows.Forms.TextBox()
+        Me.txt_pv = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txt_nombre = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txt_Producto = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -141,15 +142,16 @@ Partial Class Form_Productos
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.cbx_Provedor)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.txt_pc)
+        Me.GroupBox1.Controls.Add(Me.txt_pv)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.txt_nombre)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txt_Producto)
@@ -158,7 +160,7 @@ Partial Class Form_Productos
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.GroupBox1.Size = New System.Drawing.Size(600, 308)
+        Me.GroupBox1.Size = New System.Drawing.Size(871, 308)
         Me.GroupBox1.TabIndex = 13
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos del producto"
@@ -200,21 +202,21 @@ Partial Class Form_Productos
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "Precio v:"
         '
-        'TextBox6
+        'txt_pc
         '
-        Me.TextBox6.Location = New System.Drawing.Point(165, 246)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(206, 26)
-        Me.TextBox6.TabIndex = 9
+        Me.txt_pc.Location = New System.Drawing.Point(165, 246)
+        Me.txt_pc.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txt_pc.Name = "txt_pc"
+        Me.txt_pc.Size = New System.Drawing.Size(206, 26)
+        Me.txt_pc.TabIndex = 9
         '
-        'TextBox5
+        'txt_pv
         '
-        Me.TextBox5.Location = New System.Drawing.Point(165, 208)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(206, 26)
-        Me.TextBox5.TabIndex = 8
+        Me.txt_pv.Location = New System.Drawing.Point(165, 208)
+        Me.txt_pv.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txt_pv.Name = "txt_pv"
+        Me.txt_pv.Size = New System.Drawing.Size(206, 26)
+        Me.txt_pv.TabIndex = 8
         '
         'Label6
         '
@@ -229,22 +231,22 @@ Partial Class Form_Productos
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(420, 92)
+        Me.PictureBox1.Location = New System.Drawing.Point(410, 54)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(147, 151)
+        Me.PictureBox1.Size = New System.Drawing.Size(305, 217)
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
-        'TextBox3
+        'txt_nombre
         '
-        Me.TextBox3.Location = New System.Drawing.Point(165, 131)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(206, 26)
-        Me.TextBox3.TabIndex = 5
+        Me.txt_nombre.Location = New System.Drawing.Point(165, 131)
+        Me.txt_nombre.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txt_nombre.Name = "txt_nombre"
+        Me.txt_nombre.Size = New System.Drawing.Size(206, 26)
+        Me.txt_nombre.TabIndex = 5
         '
         'Label5
         '
@@ -287,6 +289,15 @@ Partial Class Form_Productos
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Nombre:"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(735, 54)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(118, 52)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form_Productos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -301,6 +312,7 @@ Partial Class Form_Productos
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Form_Productos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Productos"
         Me.GroupBox2.ResumeLayout(False)
         CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).EndInit()
@@ -321,15 +333,16 @@ Partial Class Form_Productos
     Friend WithEvents GroupBox1 As Windows.Forms.GroupBox
     Friend WithEvents Label6 As Windows.Forms.Label
     Friend WithEvents PictureBox1 As Windows.Forms.PictureBox
-    Friend WithEvents TextBox3 As Windows.Forms.TextBox
+    Friend WithEvents txt_nombre As Windows.Forms.TextBox
     Friend WithEvents Label5 As Windows.Forms.Label
     Friend WithEvents Label4 As Windows.Forms.Label
     Friend WithEvents txt_Producto As Windows.Forms.TextBox
     Friend WithEvents Label3 As Windows.Forms.Label
-    Friend WithEvents TextBox6 As Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As Windows.Forms.TextBox
+    Friend WithEvents txt_pc As Windows.Forms.TextBox
+    Friend WithEvents txt_pv As Windows.Forms.TextBox
     Friend WithEvents Label8 As Windows.Forms.Label
     Friend WithEvents Label7 As Windows.Forms.Label
     Friend WithEvents cbx_Provedor As Windows.Forms.ComboBox
     Friend WithEvents DateTimePicker1 As Windows.Forms.DateTimePicker
+    Friend WithEvents Button1 As Windows.Forms.Button
 End Class

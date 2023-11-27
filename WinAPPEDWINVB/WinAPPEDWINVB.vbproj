@@ -44,7 +44,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>WinAPPEDWINVB.USUARIO</StartupObject>
+    <StartupObject>WinAPPEDWINVB.Form_Productos</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
